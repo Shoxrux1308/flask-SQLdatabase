@@ -28,23 +28,23 @@ class Smartphone:
     
     def sql_get_smartphone_by_color(self, color):
         self.cursor.execute("SELECT * FROM smartphone WHERE color=?", (color,))
-        data=self.cursor.fetchone()
+        data=self.cursor.fetchall()
         return data
     
     def sql_get_smartphone_by_ram(self, ram):
         self.cursor.execute("SELECT * FROM smartphone WHERE ram=?", (ram,))
-        data=self.cursor.fetchone()
+        data=self.cursor.fetchall()
         return data
             
     
     def sql_get_smartphone_by_memory(self, memory):
         self.cursor.execute("SELECT * FROM smartphone WHERE memory=?", (memory,))
-        data=self.cursor.fetchone()
+        data=self.cursor.fetchall()
         return data
     
     def sql_get_smartphone_by_price(self, price):
         self.cursor.execute("SELECT * FROM smartphone WHERE price=?", (price,))
-        data=self.cursor.fetchone()
+        data=self.cursor.fetchall()
         return data
        
     
